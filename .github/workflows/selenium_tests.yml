@@ -2,9 +2,15 @@ name: Selenium Regression Tests
 
 on:
   push:
-    branches: [ main ]  # Se corre cada vez que subes código
+    # Se activa al subir código a cualquiera de estas dos ramas
+    branches: [ main, master ]
+
+  # PERMITE EJECUTARLO MANUALMENTE (Esto hace que aparezca el botón en la web)
+  workflow_dispatch:
+
   schedule:
-    - cron: '0 0 * * *' # Opcional: Se corre todas las noches a las 00:00
+    # Se corre automáticamente todas las noches a las 00:00 UTC
+    - cron: '0 0 * * *'
 
 jobs:
   test:
@@ -26,15 +32,17 @@ jobs:
 
     - name: Ejecutar Tests con Pytest
       run: |
+        # Ejecutamos los tests y generamos los resultados para Allure
         pytest --alluredir=allure-results
-      continue-on-error: true # Permite que el reporte se genere aunque falle un test
+      continue-on-error: true
 
     - name: Generar Reporte Allure
       uses: simple-elf/allure-report-action@master
-      if: always()
+      if: always() # Se ejecuta aunque los tests fallen
       with:
         allure_results: allure-results
         allure_history: allure-history
+        keep_reports: 20 # Mantiene los últimos 20 reportes históricos
 
     - name: Publicar Reporte en GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
