@@ -1,3 +1,5 @@
+![Selenium Tests](https://github.com/erparisi76/Curso_selenium_marzo/actions/workflows/selenium_tests.yml/badge.svg)
+
 # 🧪 QA Automation Framework - Selenium & Python
 
 Este repositorio contiene un framework de automatización de pruebas **End-to-End (E2E)** diseñado para validar flujos de usuario en aplicaciones web como [SauceDemo](https://www.saucedemo.com/) y motores de búsqueda. Está construido con estándares profesionales de la industria, integrando ejecución en la nube y reportes visuales detallados.
