@@ -16,6 +16,7 @@ def driver(request):
     # --- MODO HEADLESS (Para GitHub Actions) ---
     # Si quieres ver el navegador en tu PC, puedes comentar la siguiente línea.
     # Pero para GitHub Actions, ES OBLIGATORIA.
+
     chrome_options.add_argument("--headless=new")
 
     # Opciones de compatibilidad y privacidad
