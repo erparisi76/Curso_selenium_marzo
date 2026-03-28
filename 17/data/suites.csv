@@ -1,7 +1,0 @@
-"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","613","test_login_and_purchase","","Fri Mar 27 05:51:52 UTC 2026","failed","Fri Mar 27 05:51:53 UTC 2026","","test_05_compra_saucedemo_error","",""
-"","4326","test_login_and_purchase","","Fri Mar 27 05:51:47 UTC 2026","passed","Fri Mar 27 05:51:52 UTC 2026","","test_04_compra_saucedemo","",""
-"","0","test_submit_textbox_form","","Fri Mar 27 05:51:44 UTC 2026","broken","Fri Mar 27 05:51:44 UTC 2026","","test_02_xpath_simple","",""
-"","949","test_carrito_suma_total","","Fri Mar 27 05:51:53 UTC 2026","passed","Fri Mar 27 05:51:54 UTC 2026","","test_06_validacion_carrito","",""
-"","0","test_text_box_submission","","Fri Mar 27 05:51:40 UTC 2026","broken","Fri Mar 27 05:51:40 UTC 2026","","test_01_xpath","",""
-"","0","test_google_search_urquiza","","Fri Mar 27 05:51:44 UTC 2026","broken","Fri Mar 27 05:51:44 UTC 2026","","test_03_google_búsqueda","",""
