@@ -1,2 +1,0 @@
-
-Validación exitosa: 79.98 == 79.98
